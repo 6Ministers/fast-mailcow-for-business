@@ -1,9 +1,19 @@
 # In the process of writing...
 # Installing FlectraHQ 2.0 with one command (Production).
 
+Installation information and documentation is collected from these sources:
+
+https://github.com/mailcow/mailcow-dockerized
+
+https://docs.mailcow.email/i_u_m/i_u_m_install/
+
+https://docs.mailcow.email/manual-guides/Postfix/u_e-postfix-disable_sender_verification/#deprecated-guide-do-not-use-on-newer-mailcows
+
+
 ## Quick Installation
 
 **Before starting the instance, direct the domain to the ip of the server where Flectra will be installed!**
+
 
 Run for Ubuntu 22.04
 
@@ -63,7 +73,10 @@ Choose the Branch with it´s number [1/2] 1
 
 Сгенерированный файл конфигурации находится в файле mailcow.conf. При необходимости вы можете его отредактировать.
 
+``` bash
 nano mailcow.conf
+```
+
 Для установки выполняем следующие команды
 
 ``` bash
@@ -102,7 +115,4 @@ docker-compose down
 
 ## docker-compose.yml
 
-* caddy:alpine
-* flectrahq/flectra:2.0
-* postgres:14
 
