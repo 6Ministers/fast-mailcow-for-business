@@ -1,3 +1,4 @@
+# In the process of writing...
 # Installing FlectraHQ 2.0 with one command (Production).
 
 ## Quick Installation
@@ -13,7 +14,7 @@ sudo apt-get purge needrestart
 Install docker and docker-compose:
 
 ``` bash
-curl -s https://raw.githubusercontent.com/6Ministers/flectra-2.0prod-docker-compose/master/setup.sh | sudo bash -s
+curl -s https://raw.githubusercontent.com/6Ministers/fast-mailcow-for-flectrahq/master/setup.sh | sudo bash -s
 ```
 
 **Установка**
@@ -24,7 +25,11 @@ curl -s https://raw.githubusercontent.com/6Ministers/flectra-2.0prod-docker-comp
 sudo su
 ```
 
-Для установки нам дополнительно потребуется пакет docker-compose-plugin
+Для установки нам дополнительно потребуется пакет 
+
+``` bash
+docker-compose-plugin
+```
 
 apt install docker-compose-plugin
 Переходим в папку opt и клонируем репозиторий mailcow и переходим в папку mailcow-dockerized
