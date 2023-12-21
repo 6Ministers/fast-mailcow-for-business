@@ -1,5 +1,5 @@
 # In the process of writing...
-# Installing FlectraHQ 2.0 with one command (Production).
+# Installing MailCow for FlectraHQ (Production).
 
 Installation information and documentation is collected from these sources:
 
