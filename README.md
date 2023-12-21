@@ -28,7 +28,7 @@ sudo su
 Для установки нам дополнительно потребуется пакет 
 
 ``` bash
-docker-compose-plugin
+apt install docker-compose-plugin
 ```
 
 apt install docker-compose-plugin
