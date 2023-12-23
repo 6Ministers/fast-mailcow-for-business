@@ -297,11 +297,11 @@ sudo docker-compose down && sudo docker-compose up -d
 
 ## 12. Репутация почтового домена
 
-[Postmaster Tool](https://gmail.com/postmaster)
-[parsedmarc (self-hosted)](https://github.com/domainaware/parsedmarc)
-[Fraudmarc](https://fraudmarc.com/)
-[Postmark](https://dmarc.postmarkapp.com/)
-[Dmarcian](https://dmarcian.com/)
+- [Postmaster Tool](https://gmail.com/postmaster)
+- [parsedmarc (self-hosted)](https://github.com/domainaware/parsedmarc)
+- [Fraudmarc](https://fraudmarc.com/)
+- [Postmark](https://dmarc.postmarkapp.com/)
+- [Dmarcian](https://dmarcian.com/)
 
 
 ## 13. Web почтовый клиент SOGo
