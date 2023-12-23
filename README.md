@@ -8,28 +8,28 @@
 ---
 
 1. [MailCow Server Requirements](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#1-требования-к-серверу)
-2. Подготовка DNS сервера MailCow
-3. Preparing the MailCow DNS server
-4. Quick installation of MailCow
-5. Log in and change the administrator password
-6. Adding a mail domain
-7. Configuring the DNS of the mail domain
-8. Mail Domain Test
-9. FlectraHQ Connection
-10. Working with MailCow
-11. Commands to work with
-12. The reputation of the mail domain
-13. SOGo Web Mail Client
-14. Spam protection
-15. Links to documentation
+2. [Preparing the MailCow DNS server]()
+3. [Preparing the MailCow DNS server]()
+4. [Quick installation of MailCow]()
+5. [Log in and change the administrator password]()
+6. [Adding a mail domain]()
+7. [Configuring the DNS of the mail domain]()
+8. [Mail Domain Test]()
+9. [FlectraHQ Connection]()
+10. [Working with MailCow]()
+11. [Commands to work with]()
+12. [The reputation of the mail domain]()
+13. [SOGo Web Mail Client]()
+14. [Spam protection]()
+15. [Links to documentation]()
 
-## 1. Требования к серверу
+## 1. MailCow Server Requirements
 От и более
 - 2 CPUs
 - 2 RAM (без [full-text search in Dovecot](https://docs.mailcow.email/manual-guides/Dovecot/u_e-dovecot-fts/))
 - 15 Gb (для установки хватит и на первое время хватит)
 
-## 2. Подготовка DNS сервера MailCow
+## 2. Preparing the MailCow DNS server
 Send in DNS the subdomain to the mail server MailCow
 
 **DNS**
@@ -41,11 +41,11 @@ mail                IN A       IP MailCow
 @                   IN MX 20   mail.mailcow.ltd. (your ${MAILCOW_HOSTNAME})
 ```
 
-Документация
+Documentation
 https://docs.mailcow.email/prerequisite/prerequisite-dns/
 
 
-## 3. Подготовка сервера к установке MailCow
+## 3. Preparing the MailCow DNS server
 
 Run for Ubuntu 22.04
 
@@ -59,23 +59,23 @@ Install docker and docker-compose:
 curl -s https://raw.githubusercontent.com/6Ministers/fast-mailcow-for-flectrahq/master/setup.sh | sudo bash -s
 ```
 
-## 4. Quick Installation MailCow
+## 4. Quick installation of MailCow
 
 
-Устанавливать mailcow необходимо от пользователя root. Подключаемся к серверу под root пользователем либо выполняем следующую команду
+MailCow must be installed from the root user. Connect to the server under the root user or run the following command
 
 ``` bash
 sudo su
 ```
 
-Для установки нам дополнительно потребуется пакет 
+To install, we will additionally need a package 
 
 ``` bash
 apt install docker-compose-plugin
 ```
 
 apt install docker-compose-plugin
-Переходим в папку opt и клонируем репозиторий mailcow и переходим в папку mailcow-dockerized
+Go to the opt folder and clone the MailCow repository and go to the `mailbox-dockerized folder`
 
 ``` bash
 cd /opt
@@ -83,13 +83,13 @@ git clone https://github.com/mailcow/mailcow-dockerized
 cd mailcow-dockerized
 ```
 
-**Запускаем генерацию файла конфигурации**
+**Starting the generation of the configuration file**
 
 ``` bash
 ./generate_config.sh
 ```
 
-Во время генерации конфигурационного файла у нас будет запрошено доменное имя на котором будет находится система mailcow, советуем вам создать на вашем домене поддомен для почты и указать его.
+During the generation of the configuration file, we will be asked for the domain name on which the mailcow system will be located, we advise you to create a subdomain for mail on your domain and specify it.
 
 Specify the mail subdomain 
 
@@ -97,17 +97,17 @@ Specify the mail subdomain
 mail.domain.ltd
 ```
 
-В случаи если на вашем сервере памяти меньше чем 2.5GB скрипт предложит вам отключить ClamAV
+If your server has less than 2.5 GB of memory, the script will prompt you to disable ClamAV
 ``` bash
 Y
 ```
-Необходимо будет указать часовой пояс. Для верного указания используем данную таблицу.
+You will need to specify the time zone. For the correct indication, we use this table.
 
 We will specify the time zone
 
 https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-Вы также можете выбрать какую версию сборки mailcow устанавливать, стабильную либо тестовую. Мы будет устанавливать стабильную версию.
+You can also choose which version of the mailcow build to install, stable or test. We will install the stable version.
 
 ``` bash
 Available Branches:
@@ -116,23 +116,23 @@ Available Branches:
 Choose the Branch with it´s number [1/2] 1
 ```
 
-Сгенерированный файл конфигурации находится в файле `mailcow.conf`. При необходимости вы можете его отредактировать.
+The generated configuration file is located in the file `mailcow.conf`. If necessary, you can edit it.
 
 ``` bash
 nano mailcow.conf
 ```
 
-Находится в каталоге `/opt/mailcow-dockerized`
+Located in the catalog `/opt/mailcow-dockerized`
 
-**Установка**
-Для установки выполняем следующие команды
+**Installationа**
+To install, run the following commands
 
 ``` bash
 docker compose pull
 docker compose up -d
 ```
 
-## 5. Вход и смена пароля администратора
+## 5. Log in and change the administrator password
 
 `https://mail.mailcow.ltd/`
 
@@ -146,7 +146,7 @@ docker compose up -d
 ![dashboard](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/9aafe11f-bd4f-4377-a95a-734cc7916901)
 
 
-## 6. Добавление почтового домена
+## 6. Adding a mail domain
 
 ![add](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/3c0b256f-9666-4171-948c-896f978c32a6)
 
@@ -155,9 +155,9 @@ docker compose up -d
 ![add-domain](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/6bb587d4-d803-4d0b-9b01-6ae12d308ac9)
 
 
-## 7. Настройка DNS почтового домена
+## 7. Configuring the DNS of the mail domain
 
-Для работ Mailcow вам необходимо добавить следующие DNS записи для вашего домена
+For Gmail com to work, you need to add the following DNS records for your domain
 ``` bash
 # Name              Type       Value
 domaim.ltd          IN A       1.2.3.4
@@ -168,14 +168,15 @@ autoconfig          IN CNAME   mail.mailcow.ltd. (your ${MAILCOW_HOSTNAME})
 ```
 
 **SPF**
-Так же необходимо добавить SPF запись указав в ней IP вашего сервера
+You also need to add an SPF record specifying the IP of your server in it
 
 ``` bash
 @                   IN TXT     "v=spf1 mx a SERVER_IP -all"
 ```
 
 **DKIM**
-И указать DKIM запись которая доступна в панели управления Mailcow в разделе Configuration — Configuration & Details — ARC/DKIM keys
+And specify the DKIM entry that is available in the Mailgov control panel in the section
+Configuration — Configuration & Details — ARC/DKIM keys
 
 ``` bash
 dkim._domainkey     IN TXT     "v=DKIM1; k=rsa; t=s; s=email; p=..."
@@ -187,7 +188,8 @@ dkim._domainkey     IN TXT     "v=DKIM1; k=rsa; t=s; s=email; p=..."
 _dmarc              IN TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@example.org"
 ```
 
-Расширенные настройки
+**Advanced Settings**
+
 https://docs.mailcow.email/prerequisite/prerequisite-dns/#the-advanced-dns-configuration
 
 ``` bash
@@ -206,11 +208,11 @@ _smtps._tcp         IN SRV     0        1      465      mail.example.org. (your 
 _submission._tcp    IN SRV     0        1      587      mail.example.org. (your ${MAILCOW_HOSTNAME})
 ```
 
-Документация:
+Documentation:
 
 https://docs.mailcow.email/prerequisite/prerequisite-dns/
 
-## 8. Тест почтового домена
+## 8. Mail Domain Test
 
 Here are some tools you can use to verify your DNS configuration:
 
@@ -221,9 +223,9 @@ Here are some tools you can use to verify your DNS configuration:
 - [MultiRBL.valli.org (DNSBL, RBL, FCrDNS)](http://multirbl.valli.org/)
 
 
-## 9. Подключение FlectraHQ
+## 9. FlectraHQ Connection
 
-Чтобы письма могли отправлятся от любого домена, нужно изменить настройки в MailCow
+In order for emails to be sent from any domain, you need to change the settings in MailCow
 Disable Sender Addresses Verification
 
 https://docs.mailcow.email/manual-guides/Postfix/u_e-postfix-disable_sender_verification/#deprecated-guide-do-not-use-on-newer-mailcows
@@ -236,7 +238,8 @@ https://docs.mailcow.email/manual-guides/Postfix/u_e-postfix-disable_sender_veri
 
 ![flectra-incoming](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/20963c67-19aa-4aa9-955e-edefa3f94b14)
 
-## 10. Работа с MailCow
+
+## 10. Working with MailCow
 
 **Installation**
 
@@ -252,7 +255,7 @@ Run the update script:
 ``` bash
 ./update.sh
 ```
-Документация:
+Documentation:
 https://docs.mailcow.email/i_u_m/i_u_m_update/?h=update.sh
 
 **Migration**
@@ -265,7 +268,7 @@ https://docs.mailcow.email/i_u_m/i_u_m_migration/
 https://docs.mailcow.email/i_u_m/i_u_m_deinstall/
 
 
-## 11. Команды для работы 
+## 11. Commands to work with
 
 **MailCow container management**
 
@@ -293,7 +296,7 @@ docker-compose down
 sudo docker-compose down && sudo docker-compose up -d
 ```
 
-## 12. Репутация почтового домена
+## 12. The reputation of the mail domain
 
 - [Postmaster Tool](https://gmail.com/postmaster)
 - [parsedmarc (self-hosted)](https://github.com/domainaware/parsedmarc)
@@ -302,23 +305,24 @@ sudo docker-compose down && sudo docker-compose up -d
 - [Dmarcian](https://dmarcian.com/)
 
 
-## 13. Web почтовый клиент SOGo
+## 13. SOGo Web Mail Client
 
-После создание почтового аккаунта почтовый клиент нахощдится по адресу:
+After creating a mail account, the mail client is located at:
+
 `https://mail.mailcow.ltd/SOGo/`
 
 ![Webmail-Sogo](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/ada04f21-c07c-4a68-b911-38fe69061b0f)
 
-Вход в веб клиент по логину и паролю почтового аккаунта:
+Log in to the web client using the username and password of the email account:
 ![Sogo](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/919bfea9-4de4-4583-8d91-e19ba7c801a6)
 
 
-## 14. Защита от спама
+## 14. Spam protection
 
 В MailCow интегрирован Rspamd - Fast, free and open-source spam filtering system.
 https://rspamd.com/
 
-## 15. Ссылки на документацию
+## 15. Links to documentation
 
 Installation information and documentation is collected from these sources:
 
