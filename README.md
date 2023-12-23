@@ -7,21 +7,21 @@
 - FlectraHQ connection - 5 minutes (point 9)
 ---
 
-1. [MailCow Server Requirements](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#1-требования-к-серверу)
-2. [Preparing the MailCow DNS server]()
-3. [Preparing the MailCow DNS server]()
-4. [Quick installation of MailCow]()
-5. [Log in and change the administrator password]()
-6. [Adding a mail domain]()
-7. [Configuring the DNS of the mail domain]()
-8. [Mail Domain Test]()
-9. [FlectraHQ Connection]()
-10. [Working with MailCow]()
-11. [Commands to work with]()
-12. [The reputation of the mail domain]()
-13. [SOGo Web Mail Client]()
-14. [Spam protection]()
-15. [Links to documentation]()
+1. [MailCow Server Requirements](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#1-mailcow-server-requirements)
+2. [Preparing the MailCow DNS server](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#2-preparing-the-mailcow-dns-server)
+3. [Preparing the MailCow DNS server](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#3-preparing-the-mailcow-dns-server)
+4. [Quick installation of MailCow](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#4-quick-installation-of-mailcow)
+5. [Log in and change the administrator password](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#5-log-in-and-change-the-administrator-password)
+6. [Adding a mail domain](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#6-adding-a-mail-domain)
+7. [Configuring the DNS of the mail domain](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#7-configuring-the-dns-of-the-mail-domain)
+8. [Mail Domain Test](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#8-mail-domain-test)
+9. [FlectraHQ Connection](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#9-flectrahq-connection)
+10. [Working with MailCow](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#10-working-with-mailcow)
+11. [Commands to work with](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#11-commands-to-work-with)
+12. [The reputation of the mail domain](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#12-the-reputation-of-the-mail-domain)
+13. [SOGo Web Mail Client](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#13-sogo-web-mail-client)
+14. [Spam protection](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#14-spam-protection)
+15. [Links to documentation](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#15-links-to-documentation)
 
 ## 1. MailCow Server Requirements
 From and more
@@ -352,21 +352,21 @@ https://habr.com/ru/articles/343128/
 - Подключение FlectraHQ - 5 минут (пункт 9)
 ---
 
-1. Требования к серверу MailCow
-2. Подготовка DNS сервера MailCow
-3. Подготовка сервера к установке MailCow
-4. Быстрая установка MailCow
-5. Вход и смена пароля администратора
-6. Добавление почтового домена
-7. Настройка DNS почтового домена
-8. Тест почтового домена
-9. Подключение FlectraHQ
-10. Работа с MailCow
-11. Команды для работы 
-12. Репутация почтового домена
-13. Web почтовый клиент SOGo
-14. Защита от спама
-15. Ссылки на документацию
+1. [Требования к серверу MailCow](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#1-требования-к-серверу)
+2. [Подготовка DNS сервера MailCow](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#2-подготовка-dns-сервера-mailcow)
+3. [Подготовка сервера к установке MailCow](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#3-подготовка-сервера-к-установке-mailcow)
+4. [Быстрая установка MailCow](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#4-быстрая-установка-mailcow)
+5. [Вход и смена пароля администратора](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#5-вход-и-смена-пароля-администратора)
+6. [Добавление почтового домена](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#6-добавление-почтового-домена)
+7. [Настройка DNS почтового домена](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#7-настройка-dns-почтового-домена)
+8. [Тест почтового домена](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#8-тест-почтового-домена)
+9. [Подключение FlectraHQ](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#9-подключение-flectrahq)
+10. [Работа с MailCow](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#10-работа-с-mailcow)
+11. [Команды для работы](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#11-команды-для-работы)
+12. [Репутация почтового домена](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#12-репутация-почтового-домена)
+13. [Web почтовый клиент SOGo](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#13-web-почтовый-клиент-sogo)
+14. [Защита от спама](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#14-защита-от-спама)
+15. [Ссылки на документацию](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#15-ссылки-на-документацию) 
 
 ## 1. Требования к серверу
 От и более
