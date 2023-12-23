@@ -292,6 +292,10 @@ sudo docker-compose down && sudo docker-compose up -d
 После создание почтового аккаунта почтовый клиент нахощдится по адресу:
 `https://mail.mailcow.ltd/SOGo/`
 
+![Webmail-Sogo](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/ada04f21-c07c-4a68-b911-38fe69061b0f)
+
+Вход в веб клиент по логину и паролю почтового аккаунта:
+![Sogo](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/919bfea9-4de4-4583-8d91-e19ba7c801a6)
 
 
 ## 14. Защита от спама
