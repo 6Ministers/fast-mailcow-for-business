@@ -7,7 +7,7 @@
 - FlectraHQ connection - 5 minutes (point 9)
 ---
 
-1. MailCow Server Requirements
+1. [MailCow Server Requirements](https://github.com/6Ministers/fast-mailcow-for-flectrahq/blob/master/README.md#1-требования-к-серверу)
 2. Подготовка DNS сервера MailCow
 3. Preparing the MailCow DNS server
 4. Quick installation of MailCow
