@@ -24,7 +24,7 @@
 15. [Links to documentation]()
 
 ## 1. MailCow Server Requirements
-От и более
+From and more
 - 2 CPUs
 - 2 RAM (без [full-text search in Dovecot](https://docs.mailcow.email/manual-guides/Dovecot/u_e-dovecot-fts/))
 - 15 Gb (для установки хватит и на первое время хватит)
