@@ -1,10 +1,10 @@
 # In the process of writing...
 # Fast installing MailCow for FlectraHQ (Production).
 
-- Подготовка и установка занимает 10 минут (пункты 1-4)
-- Добавление почтового домена и его настройка 15 минут (пункты 5-7)
-- Тест 5 минут (пункт 8)
-- Подключение FlectraHQ 5 минут (пункт 9)
+- Подготовка и установка занимает - 10 минут (пункты 1-4)
+- Добавление почтового домена и его настройка - 15 минут (пункты 5-7)
+- Тест настроек - 5 минут (пункт 8)
+- Подключение FlectraHQ - 5 минут (пункт 9)
 ---
 
 1. Требования к серверу MailCow
@@ -26,7 +26,7 @@
 От и более
 - 2 CPUs
 - 2 RAM (без [full-text search in Dovecot](https://docs.mailcow.email/manual-guides/Dovecot/u_e-dovecot-fts/))
-- 15 Gb (для установки хватит и если не будете сохранять почту на сервере)
+- 15 Gb (для установки хватит и на первое время хватит)
 
 ## 2. Подготовка DNS сервера MailCow
 Send in DNS the subdomain to the mail server MailCow
@@ -169,7 +169,7 @@ autoconfig          IN CNAME   mail.mailcow.ltd. (your ${MAILCOW_HOSTNAME})
 @                   IN TXT     "v=spf1 mx a SERVER_IP -all"
 ```
 
-**DCIM**
+**DKIM**
 И указать DKIM запись которая доступна в панели управления Mailcow в разделе Configuration — Configuration & Details — ARC/DKIM keys
 
 ``` bash
