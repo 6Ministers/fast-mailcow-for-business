@@ -133,6 +133,7 @@ docker compose up -d
 ```
 
 ## 5. Вход и смена пароля администратора
+![login](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/0d1f8c64-da87-4185-814c-4540eb6a1e00)
 
 
 `https://mail.mailcow.ltd/`
