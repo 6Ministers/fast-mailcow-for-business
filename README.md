@@ -344,8 +344,7 @@ https://habr.com/ru/articles/343128/
 -------
 # Русская инструкция
 
-# In the process of writing...
-# Fast installing MailCow for FlectraHQ (Production).
+#  Быстрая установка MailCow для FlectraHQ (Продакшен).
 
 - Подготовка и установка занимает - 10 минут (пункты 1-4)
 - Добавление почтового домена и его настройка - 15 минут (пункты 5-7)
@@ -369,8 +368,6 @@ https://habr.com/ru/articles/343128/
 14. Защита от спама
 15. Ссылки на документацию
 
-
-
 ## 1. Требования к серверу
 От и более
 - 2 CPUs
@@ -378,7 +375,7 @@ https://habr.com/ru/articles/343128/
 - 15 Gb (для установки хватит и на первое время хватит)
 
 ## 2. Подготовка DNS сервера MailCow
-Send in DNS the subdomain to the mail server MailCow
+Направьте DNS на субдомен MailCow сервер
 
 **DNS**
 
@@ -395,20 +392,19 @@ https://docs.mailcow.email/prerequisite/prerequisite-dns/
 
 ## 3. Подготовка сервера к установке MailCow
 
-Run for Ubuntu 22.04
+Запустите команду для Ubuntu 22.04, чтобы не всплывало меню
 
 ``` bash
 sudo apt-get purge needrestart
 ```
 
-Install docker and docker-compose:
+Установите docker и docker-compose:
 
 ``` bash
 curl -s https://raw.githubusercontent.com/6Ministers/fast-mailcow-for-flectrahq/master/setup.sh | sudo bash -s
 ```
 
-## 4. Quick Installation MailCow
-
+## 4. Быстрая установка MailCow
 
 Устанавливать mailcow необходимо от пользователя root. Подключаемся к серверу под root пользователем либо выполняем следующую команду
 
@@ -439,7 +435,7 @@ cd mailcow-dockerized
 
 Во время генерации конфигурационного файла у нас будет запрошено доменное имя на котором будет находится система mailcow, советуем вам создать на вашем домене поддомен для почты и указать его.
 
-Specify the mail subdomain 
+Укажите почтовый субдомен
 
 ``` bash
 mail.domain.ltd
@@ -451,7 +447,7 @@ Y
 ```
 Необходимо будет указать часовой пояс. Для верного указания используем данную таблицу.
 
-We will specify the time zone
+Мы укажем часовой пояс
 
 https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -560,7 +556,7 @@ https://docs.mailcow.email/prerequisite/prerequisite-dns/
 
 ## 8. Тест почтового домена
 
-Here are some tools you can use to verify your DNS configuration:
+Вот несколько инструментов, которые вы можете использовать для проверки конфигурации вашего DNS:
 
 - [MX Toolbox (DNS, SMTP, RBL)](https://mxtoolbox.com/SuperTool.aspx)
 - [port25.com (DKIM, SPF)](https://www.port25.com/dkim-wizard/)
@@ -586,12 +582,12 @@ https://docs.mailcow.email/manual-guides/Postfix/u_e-postfix-disable_sender_veri
 
 ## 10. Работа с MailCow
 
-**Installation**
+**Установка**
 
 https://docs.mailcow.email/i_u_m/i_u_m_install/
 
 
-**Update**
+**Обновление**
 
 An update script in your mailcow-dockerized directory will take care of updates.
 
@@ -603,39 +599,38 @@ Run the update script:
 Документация:
 https://docs.mailcow.email/i_u_m/i_u_m_update/?h=update.sh
 
-**Migration**
+**Миграция**
 
 https://docs.mailcow.email/i_u_m/i_u_m_migration/
 
-
-**Deinstallation**
+**Деинсталляция**
 
 https://docs.mailcow.email/i_u_m/i_u_m_deinstall/
 
 
 ## 11. Команды для работы 
 
-**MailCow container management**
+**Управление контейнером MailCow**
 
-**Run MailCow**:
+**Запуск MailCow**:
 
 ``` bash
 docker-compose up -d
 ```
 
-**Restart MailCow**:
+**Перезапуск MailCow**:
 
 ``` bash
 docker-compose restart
 ```
 
-**Stop MailCow**:
+**Остановка MailCow**:
 
 ``` bash
 docker-compose down
 ```
 
-**Restart MailCow**:
+**Перезапуск MailCow**:
 
 ``` bash
 sudo docker-compose down && sudo docker-compose up -d
