@@ -16,10 +16,12 @@
 7. Настройка DNS почтового домена
 8. Тест почтового домена
 9. Подключение FlectraHQ
-10. Улучшения почтового домена
-11. Работа с MailCow
-12. Команды для работы 
-13. Ссылки на документацию
+10. Работа с MailCow
+11. Команды для работы 
+12. Репутация почтового домена
+13. Web почтовый клиент SOGo
+14. Защита от спама
+15. Ссылки на документацию
 
 
 
@@ -133,17 +135,15 @@ docker compose up -d
 ```
 
 ## 5. Вход и смена пароля администратора
-![login](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/0d1f8c64-da87-4185-814c-4540eb6a1e00)
-
 
 `https://mail.mailcow.ltd/`
+
+![login](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/0d1f8c64-da87-4185-814c-4540eb6a1e00)
+
 
 **login:admin**
 
 **Password:moohoo**
-
-После создание почтового аккаунта почтовый клиент нахощдится по адресу:
-`https://mail.mailcow.ltd/SOGo/`
 
 
 ## 6. Добавление почтового домена
@@ -286,12 +286,20 @@ sudo docker-compose down && sudo docker-compose up -d
 [Postmark](https://dmarc.postmarkapp.com/)
 [Dmarcian](https://dmarcian.com/)
 
-## 13. Защита от спама
+
+## 13. Web почтовый клиент SOGo
+
+После создание почтового аккаунта почтовый клиент нахощдится по адресу:
+`https://mail.mailcow.ltd/SOGo/`
+
+
+
+## 14. Защита от спама
 
 В MailCow интегрирован Rspamd - Fast, free and open-source spam filtering system.
 https://rspamd.com/
 
-## 14. Ссылки на документацию
+## 15. Ссылки на документацию
 
 Installation information and documentation is collected from these sources:
 
