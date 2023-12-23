@@ -145,11 +145,16 @@ docker compose up -d
 
 **Password:moohoo**
 
+![dashboard](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/9aafe11f-bd4f-4377-a95a-734cc7916901)
+
 
 ## 6. Добавление почтового домена
 
+![add](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/3c0b256f-9666-4171-948c-896f978c32a6)
 
+![domain](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/5a86b719-7475-493b-9c72-d28e82fa88ea)
 
+![add-domain](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/6bb587d4-d803-4d0b-9b01-6ae12d308ac9)
 
 
 ## 7. Настройка DNS почтового домена
@@ -220,6 +225,18 @@ Here are some tools you can use to verify your DNS configuration:
 
 ## 9. Подключение FlectraHQ
 
+Чтобы письма могли отправлятся от любого домена, нужно изменить настройки в MailCow
+Disable Sender Addresses Verification
+
+https://docs.mailcow.email/manual-guides/Postfix/u_e-postfix-disable_sender_verification/#deprecated-guide-do-not-use-on-newer-mailcows
+
+![mailbox](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/90076104-f054-4660-b756-54d5b623c963)
+
+![send-as](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/d10a896a-a3d3-4cc8-a2ab-b041da19af39)
+
+![flectra-outgoing](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/a01c12f7-6ca5-4e5a-ac46-044e45eaa1b7)
+
+![flectra-incoming](https://github.com/6Ministers/fast-mailcow-for-flectrahq/assets/11208423/20963c67-19aa-4aa9-955e-edefa3f94b14)
 
 ## 10. Работа с MailCow
 
