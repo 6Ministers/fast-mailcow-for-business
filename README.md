@@ -27,7 +27,7 @@
 From and more
 - 2 CPUs
 - 2 RAM (без [full-text search in Dovecot](https://docs.mailcow.email/manual-guides/Dovecot/u_e-dovecot-fts/))
-- 15 Gb (для установки хватит и на первое время хватит)
+- 15 Gb (there is enough for installation and enough for the first time)
 
 ## 2. Preparing the MailCow DNS server
 Send in DNS the subdomain to the mail server MailCow
